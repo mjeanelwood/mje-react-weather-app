@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import CurrentDate from "./CurrentDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -9,6 +10,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       temperature: response.data.main.temp,
+      date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       city: response.data.name,
@@ -42,7 +44,13 @@ export default function Weather(props) {
         <div className="row mt-4">
           <div className="col-4">
             <h1>{weatherData.city}</h1>
-            <p>Date Time</p>
+
+            <ul>
+              <li>
+                <CurrentDate date={weatherData.date} />
+              </li>
+              <li className="text-capitalize">{weatherData.description}</li>
+            </ul>
           </div>
           <div className="col-4">
             <img src={weatherData.iconUrl} alt={weatherData.description} />
@@ -58,9 +66,6 @@ export default function Weather(props) {
               <li>Feels like: 3°</li>
               <li>Wind: {Math.round(weatherData.wind)} km/h</li>
               <li>Humidity: {Math.round(weatherData.humidity)}%</li>
-              <li className="text-capitalize">
-                Description: {weatherData.description}
-              </li>
             </ul>
           </div>
         </div>

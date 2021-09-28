@@ -9,14 +9,15 @@ export default function App() {
       <div className="container">
         <Weather />
         <footer>
-          Coded by M J Elwood and{" "}
+          Coded by M J Elwood | open-source on{" "}
           <a
             href="https://github.com/mjeanelwood/mje-react-weather-app"
             target="_blank"
             rel="noreferrer"
           >
-            open-sourced on GitHub
-          </a>
+            GitHub
+          </a>{" "}
+          | hosted on Netlify
         </footer>
       </div>
     </div>

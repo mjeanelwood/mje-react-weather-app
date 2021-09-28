@@ -1,1 +1,33 @@
+.Weather {
+  font-family: "Roboto Mono", monospace;
+  border: 1px solid #767676;
+  margin: 30px auto 0px;
+  max-width: 700px;
+  padding: 15px;
+  border-radius: 5px;
+}
 
+.Weather form {
+  margin-bottom: 20px;
+}
+
+.Weather h1 {
+  color: #767676;
+  margin-top: 15px;
+}
+
+.Weather ul {
+  margin: 15px 0 10px;
+  padding: 0;
+}
+.Weather li {
+  list-style: none;
+  font-size: 13px;
+}
+.Weather img {
+  padding: 10px;
+}
+.Weather .temperature {
+  font-size: 55px;
+  line-height: 35px;
+}

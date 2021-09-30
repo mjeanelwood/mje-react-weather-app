@@ -1,5 +1,5 @@
 .Weather {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Condensed", sans-serif;
   border: 1px solid #767676;
   margin: 30px auto 0px;
   max-width: 700px;
@@ -25,7 +25,7 @@
   list-style: none;
   font-size: 13px;
 }
-.Weather img {
+.Weather canvas {
   padding: 10px;
 }
 .Weather .temperature {

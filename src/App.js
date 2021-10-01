@@ -17,7 +17,14 @@ export default function App() {
           >
             GitHub
           </a>{" "}
-          | hosted on Netlify
+          | hosted on{" "}
+          <a
+            href="https://loving-mcnulty-81856b.netlify.app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Netlify
+          </a>
         </footer>
       </div>
     </div>

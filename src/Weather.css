@@ -1,11 +1,8 @@
 .Weather {
   font-family: "Roboto Condensed", sans-serif;
-
   margin: 30px auto 0px;
-  height: 250px;
   max-width: 700px;
   padding: 15px;
-
   border: 2.5px solid #767676;
   border-radius: 12px;
   background: linear-gradient(to bottom, #13547a 0%, #80d0c7 100%);

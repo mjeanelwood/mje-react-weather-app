@@ -9,9 +9,9 @@ export default function WeatherInfo(props) {
       <div className="row mt-4">
         <div className="col-5">
           <h1>{props.data.city}</h1>
-          <p>
+          <div>
             <CurrentDate date={props.data.date} />
-          </p>
+          </div>
         </div>
         <div className="col-4">
           <span className="current-temperature">
